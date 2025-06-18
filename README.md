@@ -14,7 +14,7 @@ It automatically:
 ## 🔧 Requirements
 
 - Two devices running Knulli with network sharing enabled
-- PowerShell **7.0 or later** (PowerShell 5.1 is not supported)
+- PowerShell **7.0 or later** (PowerShell 5.1 is not supported) -> https://github.com/PowerShell/PowerShell/releases
 - Both devices must be accessible on the same local network
 
 ---
