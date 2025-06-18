@@ -1,12 +1,16 @@
 # ====== CONFIG ======
 $deviceA = "\\KNULLI34XX\share"
 $deviceB = "\\KNULLI35xxSP\share"
-$backupRoot = "D:\Knulli_Backups"
-$logFile = Join-Path $backupRoot "knulli_sync_log.txt"
+
+$scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$backupRoot = Join-Path $scriptRoot "Save_Backups"
+$logFile = Join-Path $scriptRoot "knulli_sync_log.txt"
+
 $excludedDirs = @("images", "manuals", "videos")
 $excludedFiles = @("_info.txt", "gamelist.xml")
 $foldersToSync = @("roms", "Bios")
 # ====================
+
 
 function Log {
     param ([string]$message)
